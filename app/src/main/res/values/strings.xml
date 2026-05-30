@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="recall_service_description">VeloxCore Recall reads screen content to build a private, searchable memory of everything you see. All data stays on device.</string>
+</resources>

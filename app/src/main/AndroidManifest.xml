@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.brave.veloxcore">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" android:required="true" />
+
+    <application
+        android:label="VeloxCore"
+        android:theme="@style/Theme.VeloxCore"
+        android:persistent="true">
+
+        <activity
+            android:name=".TestActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".DetectionActivity"
+            android:exported="true" />
+
+        <service
+            android:name=".VeloxCoreService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.brave.veloxcore.SERVICE" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".RecallAccessibilityService"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/recall_accessibility_config" />
+        </service>  
+
+    </application>
+</manifest>

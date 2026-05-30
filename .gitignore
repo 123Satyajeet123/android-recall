@@ -1,0 +1,25 @@
+# Build
+build/
+app/build/
+.gradle/
+local.properties
+
+# IDE
+.idea/
+*.iml
+
+# Model files (large binaries)
+*.tflite
+*.litertlm
+*.gguf
+
+# Old experiment files (kept locally, not part of Recall)
+app/src/main/java/com/brave/veloxcore/DetectionActivity.kt
+app/src/main/java/com/brave/veloxcore/OverlayView.kt
+app/src/main/java/com/brave/veloxcore/TestActivity.kt
+app/src/main/java/com/brave/veloxcore/VeloxCoreService.kt
+app/src/main/res/layout/activity_detection.xml
+app/src/main/assets/
+
+# OS
+.DS_Store
