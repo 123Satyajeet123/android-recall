@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF0D1117"
+    android:fillViewport="true">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VeloxCore"
+        android:textColor="#FF58A6FF"
+        android:textSize="28sp"
+        android:fontFamily="monospace"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/subtitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="on-device voice recall · zero cloud"
+        android:textColor="#FF8B949E"
+        android:textSize="12sp"
+        android:fontFamily="monospace"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="● Listening..."
+        android:textColor="#FF3FB950"
+        android:textSize="32sp"
+        android:fontFamily="monospace"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/speakerText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="22sp"
+        android:fontFamily="monospace"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:id="@+id/transcriptText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#FFF0F6FC"
+        android:textSize="24sp"
+        android:fontFamily="monospace"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:id="@+id/answerText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#FF58A6FF"
+        android:textSize="22sp"
+        android:fontFamily="monospace"
+        android:textStyle="bold"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:id="@+id/latencyText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#FFD29922"
+        android:textSize="18sp"
+        android:fontFamily="monospace"
+        android:layout_marginTop="12dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#FF30363D"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RECALL (live captures)"
+        android:textColor="#FF8B949E"
+        android:textSize="12sp"
+        android:fontFamily="monospace" />
+
+    <TextView
+        android:id="@+id/recallText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#FF7EE787"
+        android:textSize="11sp"
+        android:fontFamily="monospace"
+        android:layout_marginTop="8dp"
+        android:maxLines="6"
+        android:ellipsize="end" />
+
+    <TextView
+        android:id="@+id/historyText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#FF484F58"
+        android:textSize="11sp"
+        android:fontFamily="monospace"
+        android:layout_marginTop="8dp"
+        android:maxLines="4" />
+
+</LinearLayout>
+</ScrollView>

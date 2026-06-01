@@ -23,3 +23,7 @@ app/src/main/assets/
 
 # OS
 .DS_Store
+app/src/main/jniLibs/
+sherpa-onnx-1.13.2/
+main/
+*.mp4

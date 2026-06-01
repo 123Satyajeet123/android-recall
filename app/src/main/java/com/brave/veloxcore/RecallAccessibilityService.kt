@@ -18,6 +18,8 @@ import java.util.concurrent.atomic.AtomicReference
 import java.util.concurrent.CountDownLatch
 
 private val BLOCKED_PACKAGES = setOf(
+      "com.brave.veloxcore",              // self (avoid feedback loop)
+      "com.android.systemui",             // notification shade (captures our own notification)
       "com.google.android.apps.authenticator2",
       "com.authy.authy",
       "org.thoughtcrime.securesms",       // Signal
